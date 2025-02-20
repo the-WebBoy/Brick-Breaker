@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker Game</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #a8e063, #56ab2f);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        canvas {
+            background: #222;
+            display: block;
+            margin: 20px auto;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background: #ff5722;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brick Breaker</h1>
+    <canvas id="gameCanvas"></canvas>
+    <br>
+    <button onclick="restartGame()">Restart Game</button>
+    
+    <script src="game.js"></script>
+</body>
+</html>
